@@ -1,0 +1,257 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.EasyRedmine" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/er_primary</item>
+        <item name="colorPrimaryDark">@color/er_primary_dark</item>
+        <item name="colorAccent">@color/er_accent</item>
+
+        <item name="android:colorPrimary">@color/er_primary</item>
+        <item name="android:colorPrimaryDark">@color/er_primary_dark</item>
+        <item name="android:colorAccent">@color/er_accent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="searchViewStyle">@style/EasyRedmineSearchViewStyle</item>
+    </style>
+
+    <style name="ActionBarThemeOverlay" parent="">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="colorControlNormal">#fff</item>
+        <item name="colorControlHighlight">#3fff</item>
+    </style>
+
+    <style name="AppTheme.EasyRedmine.Transluent" parent="AppTheme.EasyRedmine">
+    </style>
+
+    <style name="AppTheme.EasyRedmine.NoTransluent" parent="AppTheme.EasyRedmine">
+
+    </style>
+
+    <style name="AppTheme.Redmine.Transluent" parent="AppTheme.Redmine">
+
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:background">?colorPrimary</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Redmine" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/r_primary</item>
+        <item name="colorPrimaryDark">@color/r_primary_dark</item>
+        <item name="colorAccent">@color/r_primary</item>
+
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/r_primary_dark</item>
+        <item name="android:colorAccent">@color/r_primary</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="searchViewStyle">@style/RedmineSearchViewStyle</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="searchIcon">@drawable/ic_search</item>
+        <item name="closeIcon">@drawable/ic_close</item>
+    </style>
+
+    <style name="RedmineSearchViewStyle" parent="SearchViewStyle">
+        <!-- Background for the search query section (e.g. EditText) -->
+        <item name="queryBackground">@color/r_drawer_searchview_background</item>
+    </style>
+
+    <style name="EasyRedmineSearchViewStyle" parent="SearchViewStyle">
+        <!-- Background for the search query section (e.g. EditText) -->
+        <item name="queryBackground">@color/er_drawer_searchview_background</item>
+    </style>
+
+    <style name="TextCollapsibleHeader">
+        <item name="fontPath">font/Roboto-Bold.ttf</item>
+        <item name="android:textColor">@color/text_issue_title</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextTaskDescription">
+        <item name="android:textColor">@color/description_task</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">@dimen/mediumGap</item>
+    </style>
+
+    <style name="TextTaskJournalText">
+        <item name="android:textColor">@color/description_task</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TaskRowItem">
+        <item name="android:paddingLeft">@dimen/mediumGap</item>
+        <item name="android:paddingRight">@dimen/mediumGap</item>
+        <item name="android:minHeight">32dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#C0242424</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="TaskRowTitle">
+        <item name="fontPath">font/Roboto-Medium.ttf</item>
+    </style>
+
+    <style name="MenuItem">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingLeft">@dimen/mediumGap</item>
+        <item name="android:paddingRight">@dimen/mediumGap</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/white_75_alpha</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ButtonRaisedAccent">
+        <item name="android:background">@drawable/er_statelist_button_raised_accent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ButtonRaisedAccent.Redmine" parent="ButtonRaisedAccent">
+        <item name="android:background">@drawable/r_statelist_button_raised_accent</item>
+    </style>
+
+    <style name="ButtonLogin" parent="ButtonRaisedAccent">
+        <item name="android:textAppearance">@style/TextMediumWhite16</item>
+    </style>
+
+    <style name="ButtonLogin.Redmine" parent="ButtonRaisedAccent.Redmine">
+        <item name="android:textAppearance">@style/TextMediumWhite16</item>
+    </style>
+
+    <style name="FloatingEditText">
+        <item name="floating_edit_text_highlighted_color">@color/er_primary</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="FloatingEditText.Redmine">
+        <item name="floating_edit_text_highlighted_color">@color/r_primary_dark</item>
+    </style>
+
+    <style name="ProjectDetailText">re</style>
+
+    <style name="ProjectDetailStatisticsTitle">
+        <item name="fontPath">font/Roboto-Medium.ttf</item>
+        <item name="android:textColor">@color/text_statistics_title</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ProjectDetailStatisticsValue">
+        <item name="android:textColor">@color/text_statistics_title</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TaskPriority">
+        <item name="android:textColor">@color/er_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TaskSubject">
+        <item name="android:textColor">@color/text_task_subject_90_alpha</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TaskAsignee">
+        <item name="fontPath">font/Roboto-Light.ttf</item>
+        <item name="android:textColor">@color/text_task_subject_80_alpha</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TaskDueDate">
+        <item name="fontPath">font/Roboto-Light.ttf</item>
+        <item name="android:textColor">@color/text_task_subject_50_alpha</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TaskStatus">
+        <item name="android:textColor">@color/text_task_subject_50_alpha</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextFilterName">
+        <item name="android:textColor">@color/black_75_alpha</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextNormalWhite16">
+        <item name="android:textColor">@color/text_login_button_normal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextMediumWhite16" parent="@style/TextNormalWhite16">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ButtonFlat">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:minWidth">88dp</item>
+        <item name="android:textAppearance">@style/TextMediumWhite16</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonFlat.Redmine" parent="ButtonFlat">
+        <item name="android:minWidth">88dp</item>
+    </style>
+
+    <style name="ButtonFlat.EasyRedmine" parent="ButtonFlat">
+        <item name="android:minWidth">88dp</item>
+
+    </style>
+
+    <style name="TaskTitle">
+        <item name="android:textColor">@color/description_task</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">@dimen/mediumGap</item>
+    </style>
+
+    <style name="TextJournalAuthor">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/description_task</item>
+    </style>
+
+    <style name="TextNormalDark16">
+        <item name="android:textColor">@color/black_75_alpha</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ActionBarThemePopup">
+        <item name="android:textColor">@color/description_task</item>
+    </style>
+
+    <style name="NewItemEditText">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/text_issue_normal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:paddingRight">@dimen/mediumGap</item>
+        <item name="android:paddingTop">@dimen/mediumGap</item>
+        <item name="android:paddingBottom">@dimen/mediumGap</item>
+        <item name="android:paddingLeft">@dimen/mediumGap</item>
+    </style>
+
+    <style name="NewItemTitle" parent="NewItemEditText">
+        <item name="android:textColor">@color/text_issue_hint</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="FilterRadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+</resources>

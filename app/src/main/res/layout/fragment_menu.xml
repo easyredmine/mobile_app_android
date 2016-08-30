@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/mediumGap">
+
+    <ImageView
+        android:id="@+id/vLogoDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/er_logo_drawer"/>
+
+    <TextView
+        android:id="@+id/vUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/mediumGap"
+        android:singleLine="true"
+        android:textColor="@color/white_75_alpha"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchProject"
+        android:layout_width="match_parent"
+
+        android:layout_height="48dp"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="false">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/largeGap"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNewIssues"
+                style="@style/MenuItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_new_issues"/>
+
+            <TextView
+                android:id="@+id/txtTasks"
+                style="@style/MenuItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_tasks"/>
+
+            <TextView
+                android:id="@+id/txtLogout"
+                style="@style/MenuItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_logout"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <ListView
+        android:id="@+id/listProjects"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:visibility="gone"/>
+</LinearLayout>

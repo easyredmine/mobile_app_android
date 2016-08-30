@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtauthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextJournalAuthor"
+        android:paddingLeft="@dimen/mediumGap"
+        android:paddingRight="@dimen/mediumGap" />
+
+    <TextView
+        android:id="@+id/txtnote"
+        android:layout_marginTop="@dimen/smallGap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextTaskJournalText"
+        android:paddingLeft="@dimen/mediumGap"
+        android:paddingRight="@dimen/mediumGap" />
+
+    <include
+        android:id="@+id/separator"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        layout="@layout/separator_info"
+        android:layout_marginTop="@dimen/mediumGap"
+        android:layout_marginBottom="@dimen/mediumGap"
+        android:layout_marginLeft="@dimen/mediumGap"
+        android:layout_marginRight="@dimen/mediumGap" />
+</LinearLayout>

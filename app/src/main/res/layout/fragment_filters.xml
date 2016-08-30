@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/defaultFilterWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_filter"
+                android:layout_marginBottom="@dimen/mediumGap"
+                android:layout_marginLeft="@dimen/mediumGap"
+                android:layout_marginTop="@dimen/mediumGap" />
+
+            <cz.ackee.androidskeleton.ui.RadioButtonView
+                android:id="@+id/filter_default"
+                custom:filter_name="@string/filter_all_tasks"
+                style="@style/FilterRadioButton"/>
+
+            <cz.ackee.androidskeleton.ui.RadioButtonView
+                android:id="@+id/filter1"
+                custom:filter_name="@string/filter_favorited"
+                custom:filter_value="@string/filter_value_favorited"
+                style="@style/FilterRadioButton"/>
+
+            <cz.ackee.androidskeleton.ui.RadioButtonView
+                android:id="@+id/filter2"
+                style="@style/FilterRadioButton"
+                custom:filter_name="@string/filter_assigned_to_me"
+                custom:filter_value="@string/filter_value_assigned_to_me" />
+
+            <cz.ackee.androidskeleton.ui.RadioButtonView
+                android:id="@+id/filter3"
+                style="@style/FilterRadioButton"
+                custom:filter_name="@string/filter_watched_by_me"
+                custom:filter_value="@string/filter_value_watched_by_me" />
+
+            <cz.ackee.androidskeleton.ui.RadioButtonView
+                android:id="@+id/filter4"
+                style="@style/FilterRadioButton"
+                custom:filter_name="@string/filter_i_am_author"
+                custom:filter_value="@string/filter_value_i_am_author" />
+
+            <cz.ackee.androidskeleton.ui.RadioButtonView
+                android:id="@+id/filter5"
+                style="@style/FilterRadioButton"
+                custom:filter_name="@string/filter_last_updated"
+                custom:filter_value="@string/filter_value_last_updated" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/privateFilterWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:id="@+id/publicFilterWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/public_filter"
+                android:layout_marginBottom="@dimen/mediumGap"
+                android:layout_marginLeft="@dimen/mediumGap"
+                android:layout_marginTop="@dimen/mediumGap" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

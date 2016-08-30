@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <cz.ackee.androidskeleton.ui.GmailInputView
+            android:id="@+id/assignee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:input_inputComponent="autocomplete"
+            custom:input_title="@string/new_task_assignee"/>
+
+        <cz.ackee.androidskeleton.ui.GmailInputView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:input_inputComponent="spinner"
+            custom:input_title="@string/new_task_status"/>
+
+        <EditText
+            android:id="@+id/comment"
+            android:hint="@string/comment_hint"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

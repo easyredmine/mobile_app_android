@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/mediumGap"
+        android:layout_height="wrap_content">
+
+        <com.material.widget.FloatingEditText
+            android:id="@+id/editUrl"
+            android:hint="@string/login_server_url"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/mediumGap"
+            android:layout_height="wrap_content" />
+
+        <com.material.widget.FloatingEditText
+            android:id="@+id/editName"
+            android:hint="@string/login_username"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/mediumGap"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+
+        <com.material.widget.FloatingEditText
+            android:id="@+id/editPassword"
+            android:hint="@string/login_password"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="@string/login_button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

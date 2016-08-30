@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.material.widget.FloatingEditText
+        android:id="@+id/editUrl"
+        android:hint="@string/login_server_url"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/mediumGap"
+
+        android:layout_height="wrap_content"
+        android:inputType="textWebEmailAddress"
+        style="@style/FloatingEditText"
+        android:singleLine="true"/>
+
+    <com.material.widget.FloatingEditText
+        android:id="@+id/editName"
+        android:hint="@string/login_username"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/mediumGap"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        style="@style/FloatingEditText"/>
+
+    <com.material.widget.FloatingEditText
+        android:id="@+id/editPassword"
+        android:hint="@string/login_password"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        style="@style/FloatingEditText"
+        android:singleLine="true"
+        />
+
+    <Button
+        android:id="@+id/btnLoginEasyRedmine"
+        android:text="@string/login_button_login"
+        android:layout_marginTop="@dimen/largeGap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonLogin"/>
+</merge>

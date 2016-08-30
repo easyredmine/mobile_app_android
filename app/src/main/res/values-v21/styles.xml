@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextMediumWhite16" parent="@style/TextNormalWhite16">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="ButtonFlat">
+        <item name="android:background">@drawable/ripple_item_white</item>
+        <item name="android:minWidth">88dp</item>
+        <item name="android:textAppearance">@style/TextMediumWhite16</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonFlat.Redmine" parent="ButtonFlat">
+        <item name="android:background">@drawable/ripple_item_white_redmine</item>
+        <item name="android:minWidth">88dp</item>
+    </style>
+
+    <style name="ButtonFlat.EasyRedmine" parent="ButtonFlat">
+        <item name="android:background">@drawable/ripple_item_white_easyredmine</item>
+        <item name="android:minWidth">88dp</item>
+    </style>
+
+    <style name="ButtonRaisedAccent">
+        <item name="android:background">@drawable/er_layerlist_background_tag</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ButtonRaisedAccent.Redmine" parent="ButtonRaisedAccent">
+        <item name="android:background">@drawable/r_layerlist_background_tag</item>
+    </style>
+
+</resources>

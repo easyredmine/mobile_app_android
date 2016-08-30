@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/vName"
+            style="@style/TaskTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <cz.ackee.androidskeleton.ui.CollapsibleView
+            android:id="@+id/collapsibleInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:section_title="@string/task_detail_info" />
+
+        <cz.ackee.androidskeleton.ui.CollapsibleView
+            android:id="@+id/collapsibleDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:section_title="@string/description" />
+
+        <cz.ackee.androidskeleton.ui.CollapsibleView
+            android:id="@+id/collapsibleAdditionalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:section_title="@string/task_detail_additional_info" />
+
+        <cz.ackee.androidskeleton.ui.CollapsibleView
+            android:id="@+id/collapsibleChildren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:section_title="@string/task_detail_children" />
+
+        <cz.ackee.androidskeleton.ui.CollapsibleView
+            android:id="@+id/collapsibleCustomItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:section_title="@string/task_detail_custom_item" />
+
+        <cz.ackee.androidskeleton.ui.CollapsibleView
+            android:id="@+id/collapsibleRelatedTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:section_title="@string/task_detail_related" />
+
+        <cz.ackee.androidskeleton.ui.CollapsibleView
+            android:id="@+id/collapsibleAttachements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:section_title="@string/task_detail_attachements" />
+
+        <cz.ackee.androidskeleton.ui.CollapsibleView
+            android:id="@+id/collapsibleJournalsTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:section_title="@string/task_detail_journals" />
+    </LinearLayout>
+</ScrollView>

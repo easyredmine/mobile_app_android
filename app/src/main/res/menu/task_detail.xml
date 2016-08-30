@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item-->
+        <!--android:id="@+id/action_journal"-->
+        <!--android:title="@string/menu_title_journal"-->
+        <!--app:showAsAction="ifRoom"-->
+        <!--android:icon="@drawable/ic_comments"-->
+        <!--android:enabled="false"/>-->
+    <item
+        android:id="@+id/action_edit"
+        android:title="@string/menu_title_edit_task"
+        android:icon="@drawable/ic_action_edit"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_add_time"
+        android:title="@string/menu_title_add_time"
+        android:icon="@drawable/ic_add_time"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_see_on_web"
+        android:title="@string/menu_title_see_on_web"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_globe" />
+    <item
+        android:id="@+id/action_delete"
+        android:title="@string/menu_title_delete"
+        app:showAsAction="never" />
+</menu>

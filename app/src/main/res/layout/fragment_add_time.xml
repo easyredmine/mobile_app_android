@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cz.ackee.androidskeleton.ui.GmailInputView
+            android:id="@+id/editDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:input_title="@string/add_time_date"
+            custom:input_inputComponent="date"
+            custom:input_unique_id="@+id/etDate" />
+
+        <cz.ackee.androidskeleton.ui.GmailInputView
+            android:id="@+id/editHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:input_title="@string/add_time_time"
+            custom:input_hint="@string/insertTime"
+            custom:input_inputType="number"
+            custom:input_unique_id="@id/editHours" />
+
+        <cz.ackee.androidskeleton.ui.GmailInputView
+            android:id="@+id/editComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:input_title="@string/add_time_comment"
+            custom:input_inputType="description"
+            custom:input_hint="@string/insertComment"
+            custom:input_unique_id="@+id/etComment" />
+
+        <cz.ackee.androidskeleton.ui.GmailInputView
+            android:id="@+id/editActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:input_title="@string/add_time_activity"
+            custom:input_inputComponent="spinner"
+            custom:input_unique_id="@+id/etActivity" />
+
+    </LinearLayout>
+</ScrollView>

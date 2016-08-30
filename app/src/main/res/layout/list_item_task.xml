@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/mediumGap"
+    android:paddingBottom="@dimen/mediumGap"
+    android:paddingLeft="@dimen/mediumGap"
+    android:paddingRight="@dimen/mediumGap"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TaskPriority" />
+
+    <TextView
+        android:id="@+id/txtTaskSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPriority"
+        android:layout_toLeftOf="@+id/favorite"
+        style="@style/TaskSubject" />
+
+    <TextView
+        android:id="@+id/txtAssignee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTaskSubject"
+        style="@style/TaskAsignee" />
+
+    <TextView
+        android:id="@+id/txtDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAssignee"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/txtStatus"
+        style="@style/TaskDueDate"
+        android:layout_marginTop="@dimen/smallGap" />
+
+    <TextView
+        android:id="@id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/txtDueDate" />
+
+    <ImageView
+        android:id="@id/favorite"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_star"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

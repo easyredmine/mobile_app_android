@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        style="@style/TaskRowItem"
+        android:layout_width="match_parent"
+        android:minHeight="48dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            style="@style/TaskRowTitle"
+            android:text="@string/task_detail_spent_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/vDownload"
+            android:id="@+id/txtAttachment" />
+
+        <ImageView
+            android:id="@id/vDownload"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_download"
+            android:layout_alignParentRight="true"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/separator"
+        layout="@layout/separator_info" />
+</LinearLayout>

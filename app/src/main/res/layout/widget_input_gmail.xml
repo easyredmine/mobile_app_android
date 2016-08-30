@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/mediumGap"
+            android:layout_marginTop="@dimen/mediumGap"
+            android:layout_marginBottom="@dimen/mediumGap"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/edit"
+                style="@style/NewItemEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:saveEnabled="false"
+                android:visibility="gone"
+                tools:text="digjf kdljglk jskldfgj klsdfkgj l"
+                />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/mediumGap"
+                android:layout_marginBottom="0dp"
+                android:spinnerMode="dialog"
+                android:gravity="right|center_vertical"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/vSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/mediumGap"
+                android:visibility="gone"
+                />
+
+            <AutoCompleteTextView
+                android:id="@+id/autocomplete"
+                style="@style/NewItemEditText"
+                android:visibility="gone"
+                android:saveEnabled="false"
+                android:gravity="left"
+                tools:text="Wheeeee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/separator_simple"/>
+
+</LinearLayout>

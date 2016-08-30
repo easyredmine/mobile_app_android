@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.EasyRedmine.Transluent" parent="AppTheme.EasyRedmine">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppTheme.EasyRedmine.NoTransluent" parent="AppTheme.EasyRedmine">
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+
+    <style name="AppTheme.Redmine.Transluent" parent="AppTheme.Redmine">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

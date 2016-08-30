@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CollapsibleItem">
+        <attr name="section_title" format="reference|string" />
+    </declare-styleable>
+    <declare-styleable name="RadioButtonItem">
+        <attr name="filter_name" format="string" />
+        <attr name="filter_value" format="string" />
+    </declare-styleable>
+    <declare-styleable name="GmaiInputItem">
+        <attr name="input_title" format="reference|string" />
+        <attr name="input_hint" format="reference|string" />
+        <attr name="input_unique_id" format="integer" />
+        <attr name="input_inputType" format="enum">
+            <enum name="string" value="0" />
+            <enum name="number" value="1" />
+            <enum name="description" value="2" />
+        </attr>
+        <attr name="input_inputComponent" format="enum">
+            <enum name="edittext" value="0" />
+            <enum name="spinner" value="1" />
+            <enum name="date" value="2" />
+            <enum name="autocomplete" value="155" />
+        </attr>
+    </declare-styleable>
+
+</resources>

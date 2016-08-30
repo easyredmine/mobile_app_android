@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_er"
+            android:layout_margin="@dimen/mediumGap"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:id="@+id/vBottomButons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_margin="@dimen/mediumGap">
+
+            <Button
+                android:id="@+id/vCreateFreeTrial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_free_trial"
+                android:gravity="center"
+                android:textColor="@color/text_login_button_normal"
+                style="@style/ButtonFlat.EasyRedmine" />
+
+            <Button
+                android:id="@+id/vSwitchRedmine"
+                android:layout_marginTop="@dimen/smallGap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/switch_to_redmine"
+                android:gravity="center"
+                android:textColor="@color/r_button_normal"
+                style="@style/ButtonFlat.EasyRedmine" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/mediumGap"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <include layout="@layout/layout_login_form_easyredmine" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

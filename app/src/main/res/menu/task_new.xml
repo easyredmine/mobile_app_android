@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/add_attachment"
+        android:id="@+id/action_add_attachment"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_attachment"
+        android:orderInCategory="1" />
+
+    <item
+        android:title="@string/save"
+        android:id="@+id/action_save_task"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_check"
+        android:orderInCategory="2" />
+
+</menu>

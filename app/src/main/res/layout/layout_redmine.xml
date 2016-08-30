@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/mediumGap"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_r"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside" />
+
+            <include layout="@layout/layout_login_form_redmine"/>
+
+            <Button
+                android:id="@+id/vSwitchEasyRedmine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/smallGap"
+                android:text="@string/switch_to_easy_redmine"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/er_button_normal"
+                style="@style/ButtonFlat.Redmine" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

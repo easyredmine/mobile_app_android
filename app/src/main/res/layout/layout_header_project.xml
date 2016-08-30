@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <cz.ackee.androidskeleton.ui.CollapsibleView
+        android:id="@+id/collapsibleDescription"
+        android:layout_width="match_parent"
+        app:section_title="@string/description"
+        android:layout_height="wrap_content" />
+
+    <cz.ackee.androidskeleton.ui.CollapsibleView
+        android:id="@+id/collapsibleStatistics"
+        android:layout_width="match_parent"
+        app:section_title="@string/project_detail_statistics"
+        android:layout_height="wrap_content" />
+
+    <cz.ackee.androidskeleton.ui.CollapsibleView
+        android:id="@+id/collapsibleIssues"
+        android:layout_width="match_parent"
+        app:section_title="@string/project_detail_issues"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.material.widget.FloatingEditText
+        android:id="@+id/ReditUrl"
+        android:hint="@string/login_redmine_url"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/mediumGap"
+        android:layout_height="wrap_content"
+        android:inputType="textWebEmailAddress"
+        style="@style/FloatingEditText.Redmine"/>
+
+    <com.material.widget.FloatingEditText
+        android:id="@+id/ReditName"
+        android:hint="@string/login_username"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/mediumGap"
+        android:layout_height="wrap_content"
+        style="@style/FloatingEditText.Redmine"/>
+
+    <com.material.widget.FloatingEditText
+        android:id="@+id/ReditPassword"
+        android:hint="@string/login_password"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:layout_marginBottom="@dimen/mediumGap"
+        android:layout_height="wrap_content"
+        style="@style/FloatingEditText.Redmine"/>
+
+    <com.material.widget.FloatingEditText
+        android:id="@+id/ReditPhone"
+        android:hint="@string/login_phone"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/mediumGap"
+        android:layout_height="wrap_content"
+        style="@style/FloatingEditText.Redmine"/>
+
+    <com.material.widget.FloatingEditText
+        android:id="@+id/ReditEmail"
+        android:hint="@string/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/FloatingEditText.Redmine"/>
+
+    <Button
+        android:id="@+id/btnLoginRedmine"
+        android:text="@string/login_button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonLogin.Redmine"
+        android:paddingLeft="@dimen/smallGap"
+        android:paddingRight="@dimen/smallGap" />
+</merge>

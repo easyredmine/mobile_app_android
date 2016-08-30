@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="cz.ackee.androidskeleton"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.EasyRedmine.Transluent">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.EasyRedmine.Transluent"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cz.ackee.androidskeleton.activity.NewTaskActivity"
+            android:label="@string/title_activity_new_task"/>
+
+        <activity android:name=".activity.base.BaseFragmentActivity"/>
+        <activity android:name=".activity.MainActivity"/>
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:theme="@style/AppTheme.EasyRedmine.NoTransluent"/>
+
+        <provider
+            android:name=".provider.DataProvider"
+            android:authorities="${packageName}"
+            android:exported="false"/>
+
+        <service
+            android:name=".service.ProjectsUpdateService"
+            android:exported="false"/>
+    </application>
+
+</manifest>

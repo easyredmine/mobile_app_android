@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/mediumGap"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_er"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside" />
+
+            <include layout="@layout/layout_login_form_easyredmine" />
+
+            <LinearLayout
+                android:id="@+id/vBottomButons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/smallGap"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/vCreateFreeTrial"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/create_free_trial"
+                    android:gravity="center"
+                    android:textColor="@color/text_login_button_normal"
+                    style="@style/ButtonFlat.EasyRedmine" />
+
+                <Button
+                    android:id="@+id/vSwitchRedmine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/switch_to_redmine"
+                    android:gravity="center"
+                    android:textColor="@color/r_button_normal"
+                    style="@style/ButtonFlat.EasyRedmine" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

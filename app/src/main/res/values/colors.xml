@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- BASE COLORS -->
+    <color name="colorPrimary">@color/ackee</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">@color/black</color>
+
+    <color name="ackee">#e5434b</color>
+
+    <color name="black">#000000</color>
+    <color name="black_75_alpha">#C0000000</color>
+    <color name="black_60_alpha">#99000000</color>
+    <color name="black_50_alpha">#7F000000</color>
+    <color name="black_25_alpha">#40000000</color>
+    <color name="black_20_alpha">#33000000</color>
+    <color name="black_10_alpha">#16000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_75_alpha">#C0FFFFFF</color>
+    <color name="white_50_alpha">#7FFFFFFF</color>
+    <color name="white_25_alpha">#40FFFFFF</color>
+
+    <!-- EasyRedmine SPECIFIC COLORS -->
+    <color name="er_primary">#03a9f4</color>
+    <color name="er_primary_dark">#0276aa</color>
+    <color name="er_accent">#03a9f4</color>
+    <color name="r_primary">#ce3129</color>
+    <color name="r_primary_dark">#8a1111</color>
+    <color name="r_accent">#FCA</color>
+    <color name="r_drawer_background">#c61818</color>
+    <color name="r_drawer_searchview_background">#8a1111</color>
+    <color name="er_drawer_background">#03a9f4</color>
+    <color name="er_drawer_searchview_background">#0276aa</color>
+
+    <color name="er_button_normal">#049cde</color>
+    <color name="r_button_normal">#b50808</color>
+
+    <color name="er_more_less_selected">#19049cde</color>
+    <color name="r_more_less_selected">#19b50808</color>
+
+    <color name="text_login_input_hint">#999999</color>
+    <color name="text_login_input">#4d4d4d</color>
+
+    <color name="text_login_button_normal">#747474</color>
+
+    <color name="text_issue_normal">#000000</color>
+    <color name="text_issue_hint">@color/black_60_alpha</color>
+    <color name="text_issue_title">#242424</color>
+    <color name="text_issue_text">#242424</color>
+
+    <color name="text_project_detail_assignee">@color/black_75_alpha</color>
+    <color name="text_project_detail_due_date">@color/black_50_alpha</color>
+    <color name="text_project_detail_due_date_passed">#f95555</color>
+
+    <color name="separator_issue">@color/divider_dark</color>
+    <color name="colorPrimaryDark_25_alpha">#33000000</color>
+    <color name="colorPrimaryDarkER_25_alpha">#330276aa</color>
+    <color name="colorPrimaryDarkR_25_alpha">#33ce3129</color>
+    <color name="hint_color">#C0FFFFFF</color>
+
+
+    <color name="description_task">#C0242424</color>
+    <color name="text_statistics_title">#C0242424</color>
+    <color name="text_task_subject_90_alpha">#E5101010</color>
+    <color name="text_task_subject_80_alpha">#C0101010</color>
+    <color name="text_task_subject_50_alpha">#7F101010</color>
+    <color name="separator_10_alpha">#167d8488</color>
+
+    <color name="divider_dark">#1E000000</color>
+    <color name="divider_light">#1EFFFFFF</color>
+</resources>

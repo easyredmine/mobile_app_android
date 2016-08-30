@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        style="@style/TaskRowItem"
+        android:layout_width="match_parent"
+        android:minHeight="48dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TaskRowTitle"
+            android:text="TEST1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/valueRight"
+            android:id="@+id/valueName" />
+
+        <TextView
+            android:id="@id/valueRight"
+            android:text="TESTVAL1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignParentRight="true" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/separator"
+        layout="@layout/separator_info" />
+</LinearLayout>
